@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fechar Comanda"
+        android:id="@+id/lbl_add_pedidos"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estabelecimento:"
+        android:id="@+id/comanda_data"
+        android:textSize="18dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/lbl_add_pedidos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/linearLayout">
+
+</LinearLayout>
+
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Taxa de Serviço (10%)"
+        android:id="@+id/taxa"
+        android:checked="false"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/comanda_data"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+            android:text="New Text"
+            android:id="@+id/total_comanda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignLeft="@+id/lbl_add_pedidos"
+        android:layout_alignStart="@+id/lbl_add_pedidos"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="55dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total:"
+        android:id="@+id/textView2"
+        android:textSize="18dp"
+        android:layout_marginTop="78dp"
+        android:layout_below="@+id/taxa"
+        android:layout_alignLeft="@+id/lbl_add_pedidos"
+        android:layout_alignStart="@+id/lbl_add_pedidos" />
+
+    <Button
+        android:text="Fechar Comanda"
+        android:id="@+id/button"
+        android:onClick="Fechar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
